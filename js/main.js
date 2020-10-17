@@ -36,7 +36,6 @@ function onClick(evt) {
 
 lightboxContainer.addEventListener("click", onModalButtonClose);
 function onModalButtonClose(evt) {
-  console.log(evt.target.dataset.action);
   if (evt.target.dataset.action === "close-lightbox") {
     lightboxContainer.classList.remove("is-open");
     lightboxImage.src = "";
